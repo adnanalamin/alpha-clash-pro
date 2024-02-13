@@ -1,6 +1,10 @@
 /* ============= Poppins Google Font ======================= */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-.font-poppins{
-    font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-anton {
+  font-family: "Anton", sans-serif;
 }
