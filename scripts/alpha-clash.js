@@ -1,14 +1,23 @@
-// function play(){
-//     const homeSection = document.getElementById('home-screen');
-//     homeSection.classList.add('hidden');
+function handelKeybordButtonPress(event){
+    const playerPressed = event.key;
+    const curretnAlphabateElement = document.getElementById('current-alphabate');
+    const currentAlphabate = curretnAlphabateElement.innerText;
+    const expectedAlphabate = currentAlphabate.toLowerCase();
 
-//     const playGroundSection = document.getElementById('play-ground');
-//     playGroundSection.classList.remove('hidden');
-// }
+    if(playerPressed === expectedAlphabate){
+        removeBackgroundColorById(playerPressed);
+        continueGame();
+    }else{
+        console.log('You Missed. You Lose your life')
+    }
+}
+document.addEventListener('keyup',handelKeybordButtonPress);
 
 function continueGame(){
     const alphabate = getARandomAlphabate();
-    console.log(alphabate);
+    const currentAlphabante = document.getElementById('current-alphabate');
+    currentAlphabante.innerText = alphabate;
+    setBackgroundColorById(alphabate)
 }
 
 function play(){
